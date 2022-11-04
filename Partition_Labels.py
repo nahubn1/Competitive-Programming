@@ -2,7 +2,7 @@ class Solution:
     def partitionLabels(self, s: str) -> List[int]:
         last_idx = {} # holds character and the last instance of the character
         for idx,char in enumerate(s):
-            last_idx[char]= idx
+            last_idx[char] = idx
             
         size, end = 0,0 
         result = [] # holds the size of each partition
